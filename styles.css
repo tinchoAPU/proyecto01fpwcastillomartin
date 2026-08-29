@@ -1,18 +1,17 @@
-/* PALETA ELEGANTE Y NEUTRA */
+
 :root {
-    --primary: #2b3a4a;        /* Azul marino profundo (Elegante y profesional) */
+    --primary: #2b3a4a;
     --primary-hover: #1e293b;  
-    --accent: #556b2f;         /* Verde oliva apagado (Acento suave) */
+    --accent: #556b2f;
     --accent-hover: #3b4a20;   
-    --bg-main: #fcfbf9;        /* Blanco cálido/marfil de fondo */
-    --bg-card: #eae7e1;        /* Beige/Arena suave para secciones y cajas */
-    --border-color: #d3cece;   /* Gris neutro para bordes finos */
-    --text-dark: #2c2c2c;      /* Grafito oscuro (menos agresivo que el negro puro) */
-    --text-muted: #666666;     /* Gris medio para texto secundario */
-    --footer-bg: #222831;      /* Gris grafito muy oscuro */
+    --bg-main: #fcfbf9;
+    --bg-card: #eae7e1;
+    --border-color: #d3cece;
+    --text-dark: #2c2c2c;
+    --text-muted: #666666;
+    --footer-bg: #222831;    
 }
 
-/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -20,13 +19,12 @@
 }
 
 body {
-    font-family: 'Georgia', 'Times New Roman', serif; /* Tipografía clásica y elegante */
+    font-family: 'Georgia', 'Times New Roman', serif;
     background-color: var(--bg-main);
     color: var(--text-dark);
     line-height: 1.7;
 }
 
-/* HEADER */
 .site-header {
     display: flex;
     justify-content: space-between;
