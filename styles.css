@@ -1,0 +1,308 @@
+/* PALETA ELEGANTE Y NEUTRA */
+:root {
+    --primary: #2b3a4a;        /* Azul marino profundo (Elegante y profesional) */
+    --primary-hover: #1e293b;  
+    --accent: #556b2f;         /* Verde oliva apagado (Acento suave) */
+    --accent-hover: #3b4a20;   
+    --bg-main: #fcfbf9;        /* Blanco cálido/marfil de fondo */
+    --bg-card: #eae7e1;        /* Beige/Arena suave para secciones y cajas */
+    --border-color: #d3cece;   /* Gris neutro para bordes finos */
+    --text-dark: #2c2c2c;      /* Grafito oscuro (menos agresivo que el negro puro) */
+    --text-muted: #666666;     /* Gris medio para texto secundario */
+    --footer-bg: #222831;      /* Gris grafito muy oscuro */
+}
+
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif; /* Tipografía clásica y elegante */
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+/* HEADER */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--primary);
+}
+
+.logo-box {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.logo-box small {
+    font-size: 0.7rem;
+    opacity: 0.85;
+}
+
+.main-nav {
+    background-color: var(--bg-card);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.hero-section {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 50px 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--primary-hover);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--primary);
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.hobbies-section {
+    margin-bottom: 60px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.hobby-box {
+    width: 130px;
+    height: 130px;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.hobby-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(10%);
+}
+
+.hobby-label {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.hobby-label:hover {
+    border-color: var(--text-dark);
+}
+
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-container {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.photo-placeholder {
+    width: 220px;
+    height: 140px;
+    background-color: #dcd8d0;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.contact-section {
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 11px 15px;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn-submit {
+    padding: 9px 40px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--accent-hover);
+}
+
+.site-footer {
+    background-color: var(--footer-bg);
+    color: #d1d5db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    margin-top: 60px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-right a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.separator {
+    color: #6b7280;
+}
